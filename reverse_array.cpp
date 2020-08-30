@@ -1,4 +1,4 @@
-//reverse printing of array elements
+//reverse array
 #include <iostream>
 using namespace std;
 int main() {
@@ -11,10 +11,23 @@ for(int i=0;i<n;i++){
     cout<<"enter "<< i+1<<" input"<<endl;
     cin>>a[i];
 }
-start=0;
-end=n-1;
-for(int i=end;i>=0;i--){
+ cout<<"before reverse"<<endl;
+for(int i=0;i<n;i++){
+
     cout<<a[i]<<" ";
 }
-    return 0;
+cout<<endl;
+start=0;
+end=n-1;
+while(start<end){
+    swap(a[start],a[end]);
+    start++;
+    end--;
+}
+cout<<"after reverse"<<endl;
+for(int i=0;i<n;i++){
+
+    cout<<a[i]<<" ";
+}
+return 0;
 }
