@@ -13,6 +13,7 @@ for(int i=0;i<n;i++){
 for(int i=0;i<n;i++){
    sum=sum+a[i];
 
+
 }
 cout<<"sum of "<< n <<" elements are "<<sum<<endl;
     
