@@ -2,7 +2,8 @@
     "files.associations": {
         "cstdarg": "cpp",
         "cstdio": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     },
     "compile-hero.disable-compile-files-on-did-save-code": true
 }
