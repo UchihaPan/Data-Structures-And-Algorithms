@@ -61,15 +61,25 @@ double geometric_sum(int n){
     return geometric_sum(n-1)+(1.0/pow(2,n));
     
 }
+int sumofarray(int a[],int n){
+    if(n==0){
+        return 0;
+    }
+    else{
+        return a[0]+sumofarray(a+1,n-1);
+    }
+}
     int main() {
+            int nCount[] = {1, 2, 3, 4, 5};
+
     cout<<"factorial of number is "<<factorial(3)<<endl;
     cout<<"fibonacci of number is "<<fibonacci(4)<<endl;
     cout<<"power of number is "<<power(4,2)<<endl;
     cout<<"no of digits in number is "<<nodigits(4)<<endl;
     cout<<"sum of digits in number is "<<sumofdigits(14)<<endl;
     cout<<"multiplication of number is "<<multiplication(4,2)<<endl;
-
     cout<<"geometric sum of  number is "<<geometric_sum(3)<<endl;
+    cout<<"sum of array elements are "<<sumofarray(nCount,5);
 
 
 
